@@ -1,6 +1,6 @@
 /* Custom container */
+
 /* Replaced with normal container and standard footer */
-@import url(https://fonts.googleapis.com/css?family=Muli:300,300italic|Passion+One:400,700,900|Special+Elite);
 .container-narrow {
   margin: 0 auto;
   max-width: 700px; }
@@ -8,40 +8,52 @@
 .container-narrow > hr {
   margin: 30px 0; }
 
+
 /* Replaced with standard BS3 Navbar */
 /*.navbar .nav {
   float: right; }*/
+
+@import url(https://fonts.googleapis.com/css?family=Muli:300,300italic|Passion+One:400,700,900|Special+Elite);
+@import "variables";
+
 body {
-  background-color: #f4f1eb;
-  color: #3d4c53;
-  font-family: "Muli", sans-serif; }
-
+  background-color: lighten($light, 7%);
+  color: $dark;
+  font-family: "Muli", sans-serif;
+}
 h1, h2, h3, h4 {
-  color: #f1433f;
-  font-family: "Passion One", sans-serif; }
-
+  color: $primary;
+  font-family: "Passion One", sans-serif;
+}
 a {
-  color: #70b7ba; }
-  a:hover {
-    color: #489295;
-    text-decoration: none; }
-
+  color: $secondary;
+  &:hover {
+    color: darken($secondary, 15%);
+    text-decoration: none;
+  }
+}
 .navbar {
   border-radius: 0px;
   background-image: none;
-  background-color: #3d4c53; }
-  .navbar .navbar-brand, .navbar .navbar-nav li a {
-    color: #e7e1d4; }
-    .navbar .navbar-brand:hover, .navbar .navbar-nav li a:hover {
-      color: #ffffff;
-      background-color: #1d2427; }
-
+  background-color: $dark;
+  .navbar-brand, .navbar-nav li a {
+    color: $light;
+    &:hover {
+      color: $white;
+      background-color: darken($dark, 15%);
+    }
+  }
+}
 #footer {
-  background-color: #3d4c53;
-  color: #ffffff; }
+  background-color: $dark;
+  color: $white;
+}
 
 .date {
-  font-family: "Special Elite", monospace; }
+  font-family: "Special Elite", monospace;
+}
+
+
 
 /* posts index */
 .post > h3.title {
@@ -80,8 +92,8 @@ a {
 .tag_box a {
   padding: 3px 6px;
   margin: 2px;
-  background: #e7e1d4;
-  color: #3d4c53;
+  background: $light;
+  color: $dark;
   border-radius: 3px;
   text-decoration: none;
   border: none; }
@@ -91,7 +103,5 @@ a {
   font-size: 0.8em; }
 
 .tag_box a:hover, .tag_box a:active {
-  background-color: #70b7ba;
-  color: #ffffff; }
-
-/*# sourceMappingURL=style.css.map */
+  background-color: $secondary;
+  color: $white; }
