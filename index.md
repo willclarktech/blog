@@ -5,6 +5,13 @@ tagline: a work in progress (but that's ok)
 ---
 {% include JB/setup %}
 
+The main purpose of this blog is to keep an updated record of the steps involved in creating a web application, covering the process—
+
+* from inception to production and beyond,
+* from the most abstract overview of the process to incredibly specific suggestions (e.g. what to type in the command line),
+* from the perspective of someone interested in every aspect of building a web application (no matter how far things get from programming),
+* from the perspective of someone aiming to do everything the right way from the outset.
+
 ## Getting started
 
 [Start here] with web development steps at the most abstract level. You can navigate to more specific steps from there.

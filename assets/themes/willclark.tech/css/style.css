@@ -53,9 +53,22 @@ a {
 #footer {
   background-color: #3d4c53;
   color: #ffffff; }
+  #footer .twitter-btn-footer {
+    height: 100%;
+    float: right; }
+
+iframe {
+  vertical-align: middle;
+  margin-bottom: 4px; }
 
 .date {
   font-family: "Special Elite", monospace; }
+
+.twitter-btn-post {
+  padding-left: 40px; }
+
+.twitter-btn-page {
+  padding-left: 15px; }
 
 /* posts index */
 .post > h3.title {
