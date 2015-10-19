@@ -12,7 +12,7 @@ I'm a web developer living in Berlin, previously from London. The main purpose o
 * from the perspective of someone interested in every aspect of building a web application (no matter how far things get from programming),
 * from the perspective of someone aiming to do everything the right way from the outset.
 
-## Getting started
+## Get started
 
 [Start here] with web development steps at the most abstract level. You can navigate to more specific steps from there.
 

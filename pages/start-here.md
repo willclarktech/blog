@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Start Here"
-description: "Navigation at the most abstract level"
+description: "Overview of web application development process for beginners just starting to code or experienced developers to consolidate best practices."
 group: custom_nav
 pages_display: yes
 ---

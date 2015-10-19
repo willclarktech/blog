@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Coding Setup"
-description: ""
+description: "Set up your coding environment: suggestions for terminal, text editor, version control, repositories, browsers (iTerm2, ST3, git, github)."
 ---
 {% include JB/setup %}
 
