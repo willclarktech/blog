@@ -13,6 +13,8 @@ body {
 h1, h2, h3, h4 {
   color: #f1433f;
   font-family: "Passion One", sans-serif; }
+  h1 small, h2 small, h3 small, h4 small {
+    color: #5d747f; }
 
 p {
   text-align: justify; }
@@ -64,10 +66,15 @@ iframe {
 .date {
   font-family: "Special Elite", monospace; }
 
+.recommended {
+  color: #f1433f; }
+
 .twitter-btn-post {
   padding-left: 40px; }
 
 .twitter-btn-page {
+  height: auto;
+  margin-top: 30px;
   padding-left: 15px; }
 
 /* posts index */

@@ -20,6 +20,9 @@ body {
 h1, h2, h3, h4 {
   color: $primary;
   font-family: "Passion One", sans-serif;
+  small {
+    color: lighten($dark, 15%);
+  }
 }
 p {
   text-align: justify;
@@ -87,10 +90,16 @@ iframe {
   font-family: "Special Elite", monospace;
 }
 
+.recommended {
+  color: $primary;
+}
+
 .twitter-btn-post {
   padding-left: 40px;
 }
 .twitter-btn-page {
+  height: auto;
+  margin-top: 30px;
   padding-left: 15px;
 }
 
