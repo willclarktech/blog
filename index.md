@@ -5,7 +5,7 @@ tagline: a work in progress (but that's ok)
 ---
 {% include JB/setup %}
 
-The main purpose of this blog is to keep an updated record of the steps involved in creating a web application, covering the process—
+I'm a web developer living in Berlin, previously from London. The main purpose of this blog is to keep an updated record of the steps involved in creating a web application, covering the process—
 
 * from inception to production and beyond,
 * from the most abstract overview of the process to incredibly specific suggestions (e.g. what to type in the command line),
