@@ -94,13 +94,18 @@ iframe {
   color: $primary;
 }
 
-.twitter-btn-post {
+.social-area {
   padding-left: 40px;
-}
-.twitter-btn-page {
   height: auto;
   margin-top: 30px;
   padding-left: 15px;
+
+  .social-btn {
+    vertical-align: middle;
+    display: inline;
+    float: left;
+    padding-right: 10px;
+  }
 }
 
 

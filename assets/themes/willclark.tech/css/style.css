@@ -69,13 +69,16 @@ iframe {
 .recommended {
   color: #f1433f; }
 
-.twitter-btn-post {
-  padding-left: 40px; }
-
-.twitter-btn-page {
+.social-area {
+  padding-left: 40px;
   height: auto;
   margin-top: 30px;
   padding-left: 15px; }
+  .social-area .social-btn {
+    vertical-align: middle;
+    display: inline;
+    float: left;
+    padding-right: 10px; }
 
 /* posts index */
 .post > h3.title {
