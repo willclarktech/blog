@@ -2,6 +2,7 @@
 layout: page
 title: willclark.tech
 tagline: a work in progress (but that's ok)
+description: "I’m a web developer living in Berlin, previously from London. The main purpose of this blog is to keep an updated record of the steps involved in creating a web application, covering the process—"
 ---
 {% include JB/setup %}
 
