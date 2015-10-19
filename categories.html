@@ -11,12 +11,27 @@ group: custom_nav
   {% include JB/categories_list %}
 </ul>
 
-
 {% for category in site.categories %} 
-  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+  <h3 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h3>
   <ul>
     {% assign pages_list = category[1] %}  
     {% include JB/pages_list %}
   </ul>
 {% endfor %}
 
+<hr>
+
+<h1>Tags</h1>
+
+<ul class="tag_box inline">
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+</ul>
+
+{% for tag in site.tags %} 
+  <h3 id="{{ tag[0] }}-ref">{{ tag[0] }}</h3>
+  <ul>
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  </ul>
+{% endfor %}
