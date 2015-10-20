@@ -7,7 +7,7 @@ tags: [command line, introduction, code fast]
 ---
 {% include JB/setup %}
 
-If using apps on your computer is like talking to a friend from a foreign country via an interpreter, using the command line is like learning their language and talking to them directly. The interpreter might be faster at getting the point across, and probably has a more elegant turn of phrase than you do, but there are many contexts where communication is just easier without the addition of a middleman.
+If using apps on your computer is like talking to a friend from a foreign country via an interpreter, using the command line is like learning their language and talking to them directly. The interpreter might be faster at getting the point across, and no doubt often has a more elegant turn of phrase than you do, but there are many contexts where communication is just easier and faster without the addition of a middleman.
 
 This is a post for anyone who's getting started with web development and wants to know which commands to focus on right away: here are the commands that I find myself using all the time. There are of course many other commands you will need to know as you progress with programming, but knowing these will get you up and running. These instructions are based on using a Mac, but most of it will be directly transferable to Linux. PC users: sorry, I just don't know anything about that (but check out the [command line crash course][learn cli the hard way] at learncodethehardway.org).
 
