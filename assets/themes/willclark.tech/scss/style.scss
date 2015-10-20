@@ -17,6 +17,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .container {
+    width: 720px;
+  }
+}
+
 h1, h2, h3, h4 {
   color: $primary;
   font-family: "Passion One", sans-serif;
