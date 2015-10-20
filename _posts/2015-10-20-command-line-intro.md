@@ -29,7 +29,9 @@ I'm assuming you know how to open a Terminal window (or [iTerm2] if you've follo
 
 * When specifying a path, `..` signifies the parent directory (the enclosing folder). So `../folder_name` is a path to a folder at the same level as your current directory and `../..` is a path to the parent directory of the parent directory (i.e. two steps up).
 
-* If you have a directory whose name has a space in it, like "Application Support", you have to escape the space, otherwise Terminal thinks it's reached the end of the path. To escape the space, use a backward slash like this: `cd Library/Application\ Support/Google/`.
+* If you have a directory whose name has a space in it, like "Application Support", you have to escape the space, otherwise Terminal thinks it's reached the end of the path. To escape the space, use a backward slash like this:
+
+        $ cd Library/Application\ Support/Google/
 
 ## Frequently used commands
 
