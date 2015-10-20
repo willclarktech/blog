@@ -1,11 +1,13 @@
 ---
 layout: page
 title: "Coding Basics"
-description: "Basic coding skills you will need"
+description: "Basic coding skills you will need to start developing web applications."
 ---
 {% include JB/setup %}
 
 ## Command line
+
+[My post on the most commonly used commands][command-line-intro]
 
 [Learn the command line at learncodethehardway.org] <span class="recommended">(Recommended)</span>
 
@@ -35,6 +37,7 @@ description: "Basic coding skills you will need"
 
 [Learn Python at Codecademy]
 
+[command-line-intro]: ../../coding/2015/10/20/command-line-intro/
 [Learn the command line at learncodethehardway.org]: http://cli.learncodethehardway.org/book/
 [Learn the command line at Codecademy]: https://www.codecademy.com/en/courses/learn-the-command-line
 [Learn Git with Github]: https://try.github.io/levels/1/challenges/1
