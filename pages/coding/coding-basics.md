@@ -7,6 +7,8 @@ description: "Basic coding skills you will need to start developing web applicat
 
 ## Command line
 
+If using apps on your computer is like talking to a friend from a foreign country via an interpreter, using the command line is like learning their language and talking to them directly. The interpreter might be faster at getting the point across, and no doubt often has a more elegant turn of phrase than you do, but there are many contexts where communication is just easier and faster without the addition of a middleman.
+
 [My post on the most commonly used commands][command-line-intro]
 
 [Learn the command line at learncodethehardway.org] <span class="recommended">(Recommended)</span>
