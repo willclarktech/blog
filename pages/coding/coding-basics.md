@@ -42,7 +42,9 @@ If using apps on your computer is like talking to a friend from a foreign countr
 ## Markdown
 
 [Learn Markdown in 10 minutes] <span class="recommended">(Recommended)</span>
+
 [Markdown cheatsheet]
+
 [Slightly more in-depth Markdown resource]
 
 [command-line-intro]: ../../coding/2015/10/20/command-line-intro/
