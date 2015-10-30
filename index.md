@@ -29,7 +29,7 @@ Not sure what this is all about? Read the [mission statement].
 
 ## Hire me!
 
-[Get in touch] if you need a website, or if your existing website needs updating. As I'm building up a portfolio right now my prices are very reasonable and if it's a simple site I can even do it for free. [See my website] for further details and examples of my work.
+[Get in touch] if you need a website, or if your existing website needs updating. As I'm building up a portfolio right now my prices are very reasonable. [See my website] for further details and examples of my work.
 
 [Start here]: pages/start-here.html
 [mission statement]: general/2015/10/16/mission-statement/
