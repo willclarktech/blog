@@ -7,7 +7,7 @@ description: "Set up your coding environment: suggestions for terminal, text edi
 
 ## Terminal
 
-If you're on a Mac, you'll want [iTerm2].
+If you're on a Mac, you'll want [iTerm2]. Check out my [guide to configuring iTerm2].
 
 ### Aliases
 
@@ -40,6 +40,7 @@ I use [Chrome] as my main development browser and [Firefox] for testing. (It's g
 
 
 [iTerm2]: https://www.iterm2.com/
+[guide to configuring iTerm2]: ../../tools/2015/11/04/configuring-iterm2/
 [Terminal aliases]: http://www.techradar.com/how-to/computing/apple/terminal-101-creating-aliases-for-commands-1305638
 [Sublime Text 3]: http://www.sublimetext.com/3
 [Git]: https://git-scm.com/

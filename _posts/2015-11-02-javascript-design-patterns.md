@@ -2,7 +2,7 @@
 layout: post
 title: "JavaScript Design Patterns"
 description: "Learning JavaScript Design Patterns: the free online book by Addy Osmani for learning javascript design patterns, plus quick reference repository."
-category: "coding"
+category: coding
 tags: [javascript, design patterns, best practices]
 ---
 {% include JB/setup %}
