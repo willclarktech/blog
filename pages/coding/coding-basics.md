@@ -47,7 +47,7 @@ If using apps on your computer is like talking to a friend from a foreign countr
 
 [Slightly more in-depth Markdown resource]
 
-[command-line-intro]: ../../coding/2015/10/20/command-line-intro/
+[command-line-intro]: ../../coding/2015/10/20/command-line-intro
 [Learn the command line at learncodethehardway.org]: http://cli.learncodethehardway.org/book/
 [Learn the command line at Codecademy]: https://www.codecademy.com/en/courses/learn-the-command-line
 [Learn Git with Github]: https://try.github.io/levels/1/challenges/1
