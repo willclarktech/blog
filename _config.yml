@@ -1,0 +1,22 @@
+title: 'willclark.tech'
+description: 'return tech || future || philosophy'
+production_url : http://blog.willclark.tech
+author :
+  name : Will Clark
+  email : will@willclark.tech
+  github : willclarktech
+  twitter : willclarktech
+
+
+theme: 'jekyll-theme-cayman'
+paginate: 10
+
+google_analytics: 'UA-69040906-1'
+disqus_short_name: 'willclarktech'
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'CNAME'
+  - 'README.md'
+  - 'CHANGELOG.md'
