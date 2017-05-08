@@ -13,6 +13,7 @@ paginate: 10
 
 google_analytics: 'UA-69040906-1'
 disqus_short_name: 'willclarktech'
+facebook_app_id: '1090459484420345'
 
 exclude:
   - 'Gemfile'
