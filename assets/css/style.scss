@@ -53,6 +53,14 @@ h3, h4, h5, h6, h2.project-tagline {
   .sharing {
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    .twitter-share-button {
+      vertical-align: bottom;
+    }
+
+    div {
+      display: inline;
+    }
   }
 }
 
