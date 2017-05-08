@@ -1,6 +1,6 @@
 ---
 title: "Download a folder from a GitHub repo"
-description: "Quick command line tip for downloading a specific folder from a GitHub repository without cloning the whole thing."
+description: "Download a folder from a GitHub repository without cloning the whole thing."
 category: tech
 tags: [git, GitHub, version control]
 ---
