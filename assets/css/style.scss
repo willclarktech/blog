@@ -28,7 +28,7 @@
 
 body {
   font-family: Helvetica 300 !important;
-  line-height: 2.2rem;
+  line-height: 2.15rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,10 +45,15 @@ h2.project-tagline {
   h1 {
     margin-bottom: 2.5rem;
     font-size: 4rem;
+    font-weight: bold;
     line-height: 4.1rem;
   }
-  h1, h2 {
+  h2 {
+    line-height: 1.5rem;
     font-weight: bold;
+  }
+  h3 {
+    line-height: 1.8rem;
   }
   .sharing {
     margin-top: 2rem;
