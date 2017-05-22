@@ -1,3 +1,6 @@
+## 2.3.0
+- POST: curry your functions
+
 ## 2.2.0
 - POST: teleological interview
 - styling adjustments
