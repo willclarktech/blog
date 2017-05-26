@@ -2,7 +2,7 @@
 title: "The teleological interview"
 description: "What if we framed interviews around people's purposes?"
 category: future
-tags: [interviews, HR, hiring]
+tags: [interviews, hr, hiring]
 ---
 
 I suspect that a large class of hiring interviews could be improved by placing more emphasis on people's purposes. Here is a set of proposed questions for an interview of that kind:
