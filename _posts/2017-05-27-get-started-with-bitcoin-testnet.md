@@ -252,3 +252,7 @@ You can also get these messages out of the blockchain later using smartbit’s `
 ## Conclusion
 
 It can seem difficult to get started developing with Bitcoin because (a) a lot of Bitcoin code is written in low-level languages like C++, (b) it takes a fair amount of setup and system resources to run a full node, and (c) Bitcoin is valuable so mistakes can be very expensive. Hopefully this post has shown that you can get started really easily using JavaScript, third-party APIs, and the Testnet.
+
+### P.S.
+
+Sorry for the broken syntax highlighting. If you feel like making a noise [here](https://github.com/jekyll/jekyll/pull/5230) it might get fixed sooner.
