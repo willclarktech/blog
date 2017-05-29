@@ -2,7 +2,7 @@
 title: "Get started with the Bitcoin Testnet"
 description: "Try out JS Bitcoin development for free with the Testnet"
 category: tech
-tags: [bitcoin, testing, js]
+tags: [bitcoin, cryptocurrency, testing, js]
 ---
 
 I recently incorporated logging data to the Bitcoin blockchain into my [blockchain-logger](https://github.com/willclarktech/blockchain-logger) project, using the [Testnet](https://en.bitcoin.it/wiki/Testnet) to try things out without risking real Bitcoin. This is a tutorial-style distillation of what I did, covering:
