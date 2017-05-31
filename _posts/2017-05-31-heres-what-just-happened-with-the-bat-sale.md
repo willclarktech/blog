@@ -11,7 +11,8 @@ The ICO was complete in a record **24 seconds**, making it almost certainly the 
 
 A lot of people are very unhappy on the Brave community slack channel:
 
-![slack screenshot](https://pbs.twimg.com/media/DBKqLwoW0AAdVRi.jpg:large)
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A lot of people are very angry on the <a href="https://twitter.com/search?q=%24BAT&amp;src=ctag">$BAT</a> community slack channel right now <a href="https://twitter.com/hashtag/BAT?src=hash">#BAT</a> <a href="https://twitter.com/hashtag/ICO?src=hash">#ICO</a> <a href="https://twitter.com/hashtag/basicattentiontoken?src=hash">#basicattentiontoken</a> <a href="https://t.co/Pvb920hmJb">pic.twitter.com/Pvb920hmJb</a></p>&mdash; will clark (@willclarktech) <a href="https://twitter.com/willclarktech/status/869944972371513344">May 31, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 It seems that the entire stock of BAT was bought up by just 190 or so actors. Including this guy:
 
