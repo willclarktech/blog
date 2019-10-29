@@ -1,3 +1,6 @@
+### 2.3.1
+- update gems
+
 ## 2.3.0
 - POST: curry your functions
 
