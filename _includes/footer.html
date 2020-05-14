@@ -1,8 +1,21 @@
 <footer class="site-footer">
   {% if site.github.is_project_page %}
-    <span class="site-footer-owner">
-      © {{ 'now' | date: "%Y" }}
-      <a href="{{ site.github.owner_url }}">Will Clark</a>
-    </span>
+  <span class="site-footer-owner">
+    © {{ 'now' | date: "%Y" }} Will Clark
+  </span>
+  <span>
+    <a class="social-media-icon earth" href="https://{{ site.author.website }}">
+      <img height="24" width="24" src="/assets/img/earth.svg" />
+    </a>
+    <a class="social-media-icon github" href="{{ site.github.owner_url }}">
+      <img height="24" width="24" src="/assets/img/github.svg" />
+    </a>
+    <a
+      class="social-media-icon twitter"
+      href="https://twitter.com/{{ site.author.twitter }}"
+    >
+      <img height="24" width="24" src="/assets/img/twitter.svg" />
+    </a>
+  </span>
   {% endif %}
 </footer>

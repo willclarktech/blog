@@ -114,3 +114,27 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.social-media-icon {
+  margin-right: 0.5rem;
+  vertical-align: center;
+  // Equivalent to $linky: https://codepen.io/sosuke/pen/Pjoqqp
+  filter: invert(39%) sepia(93%) saturate(3844%) hue-rotate(168deg)
+    brightness(91%) contrast(102%);
+}
+
+.social-media-icon:hover {
+  text-decoration: none;
+
+  &.earth {
+    filter: none;
+  }
+  &.github {
+    filter: invert(3%) sepia(10%) saturate(374%) hue-rotate(315deg)
+      brightness(94%) contrast(87%);
+  }
+  &.twitter {
+    filter: invert(46%) sepia(57%) saturate(1164%) hue-rotate(171deg)
+      brightness(103%) contrast(90%);
+  }
+}
