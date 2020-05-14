@@ -1,4 +1,5 @@
 #!/bin/sh
+mkdir -p _drafts
 if [ -z $1 ];
 then echo "No slug specified";
 else echo '---
