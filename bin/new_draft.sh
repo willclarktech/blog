@@ -4,7 +4,7 @@ then echo "No slug specified";
 else echo '---
 title: "Title"
 description: "This will be tweeted"
-category: tech|future|philosophy
+category: tech|nonsense
 tags: []
 ---' > "_drafts/$1.md";
 fi
