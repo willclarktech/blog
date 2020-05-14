@@ -1,5 +1,6 @@
 ---
 ---
+
 // // Breakpoints
 // $large-breakpoint: 64em !default;
 // $medium-breakpoint: 42em !default;
@@ -31,8 +32,15 @@ body {
   line-height: 2.15rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Futura, "Futura-Medium", "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Futura, "Futura-Medium", "Futura Medium", "Century Gothic",
+    CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde",
+    sans-serif;
 }
 
 h2.project-tagline {
@@ -55,18 +63,6 @@ h2.project-tagline {
   h3 {
     line-height: 1.8rem;
   }
-  .sharing {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-
-    .twitter-share-button {
-      vertical-align: bottom;
-    }
-
-    div {
-      display: inline;
-    }
-  }
 }
 
 .post-excerpt {
@@ -78,7 +74,9 @@ h2.project-tagline {
   margin-top: 2rem;
   padding-top: 2rem;
 
-  .previous, .next, .page-number {
+  .previous,
+  .next,
+  .page-number {
     margin-right: 2rem;
   }
 }
@@ -99,7 +97,12 @@ section.page-header {
 }
 
 .main-content {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $bluey;
   }
 }
