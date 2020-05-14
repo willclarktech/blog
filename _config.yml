@@ -1,8 +1,9 @@
 title: "willclark.tech"
 description: "return tech || nonsense"
-production_url: "http://blog.willclark.tech"
+production_url: "https://blog.willclark.tech"
 author:
   name: "Will Clark"
+  website: "willclark.tech"
   email: "will@willclark.tech"
   github: "willclarktech"
   twitter: "willclarktech"
