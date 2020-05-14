@@ -19,3 +19,4 @@ exclude:
   - "CNAME"
   - "README.md"
   - "CHANGELOG.md"
+  - "scripts/"
