@@ -1,29 +1,33 @@
 ---
 ---
 
-// // Breakpoints
-// $large-breakpoint: 64em !default;
-// $medium-breakpoint: 42em !default;
-//
-// // Headers
-// $header-heading-color: #fff !default;
-// $header-bg-color: #159957 !default;
-// $header-bg-color-secondary: #155799 !default;
-//
-// // Text
-// $section-headings-color: #159957 !default;
-// $body-text-color: #606c71 !default;
-// $body-link-color: #1e6bb8 !default;
-// $blockquote-text-color: #819198 !default;
-//
-// // Code
-// $code-bg-color: #f3f6fa !default;
-// $code-text-color: #567482 !default;
-//
-// // Borders
-// $border-color: #dce6f0 !default;
-// $table-border-color: #e9ebec !default;
-// $hr-border-color: #eff0f1 !default;
+$primary: #004563;
+$secondary: #98cc96;
+$linky: #0089a7;
+
+// Breakpoints
+$large-breakpoint: 64em;
+$medium-breakpoint: 42em;
+
+// Headers
+$header-heading-color: white;
+$header-bg-color: $primary;
+$header-bg-color-secondary: $secondary;
+
+// Text
+$section-headings-color: $primary;
+$body-text-color: #606c71;
+$body-link-color: $linky;
+$blockquote-text-color: #819198;
+
+// Code
+$code-bg-color: #f3f6fa;
+$code-text-color: #567482;
+
+// Borders
+$border-color: #dce6f0;
+$table-border-color: #e9ebec;
+$hr-border-color: #eff0f1;
 
 @import "{{ site.theme }}";
 
@@ -65,10 +69,6 @@ h2.project-tagline {
   }
 }
 
-.post-excerpt {
-  margin-bottom: 3rem;
-}
-
 .pagination {
   border-top: solid 1px #eff0f1;
   margin-top: 2rem;
@@ -81,19 +81,12 @@ h2.project-tagline {
   }
 }
 
-// TODO: Delete when variable overrides are released
+section.page-header h2 {
+  margin-bottom: 0;
+}
 
-$greeny: #98cc96;
-$bluey: #004563;
-$linky: #0089a7;
-
-section.page-header {
-  background-color: black;
-  background-image: linear-gradient(120deg, $greeny, $bluey);
-
-  h2 {
-    margin-bottom: 0;
-  }
+.post-excerpt {
+  margin-bottom: 3rem;
 }
 
 .main-content {
@@ -103,13 +96,10 @@ section.page-header {
   h4,
   h5,
   h6 {
-    color: $bluey;
+    color: $primary;
   }
 }
 
-a {
-  color: $linky;
-}
 .project-name a {
   color: white;
   text-decoration: none;
@@ -121,20 +111,22 @@ a {
   // Equivalent to $linky: https://codepen.io/sosuke/pen/Pjoqqp
   filter: invert(39%) sepia(93%) saturate(3844%) hue-rotate(168deg)
     brightness(91%) contrast(102%);
-}
 
-.social-media-icon:hover {
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
 
-  &.earth {
-    filter: none;
-  }
-  &.github {
-    filter: invert(3%) sepia(10%) saturate(374%) hue-rotate(315deg)
-      brightness(94%) contrast(87%);
-  }
-  &.twitter {
-    filter: invert(46%) sepia(57%) saturate(1164%) hue-rotate(171deg)
-      brightness(103%) contrast(90%);
+    &.earth {
+      filter: none;
+    }
+    &.github {
+      // Equivalent to #181717
+      filter: invert(3%) sepia(10%) saturate(374%) hue-rotate(315deg)
+        brightness(94%) contrast(87%);
+    }
+    &.twitter {
+      // Equivalent to #1DA1F2
+      filter: invert(46%) sepia(57%) saturate(1164%) hue-rotate(171deg)
+        brightness(103%) contrast(90%);
+    }
   }
 }
