@@ -19,5 +19,4 @@ exclude:
   - "Gemfile.lock"
   - "CNAME"
   - "README.md"
-  - "CHANGELOG.md"
   - "scripts/"
