@@ -1,4 +1,5 @@
 title: "willclark.tech"
+tagline: "return tech || nonsense"
 description: "return tech || nonsense"
 production_url: "https://blog.willclark.tech"
 author:
@@ -13,6 +14,15 @@ paginate: 10
 
 google_analytics: "UA-69040906-1"
 disqus_short_name: "willclarktech"
+
+twitter:
+  username: "willclarktech"
+
+social:
+  name: "willclarktech"
+  links:
+    - "https://twitter.com/willclarktech"
+    - "https://github.com/willclarktech"
 
 exclude:
   - "Gemfile"
