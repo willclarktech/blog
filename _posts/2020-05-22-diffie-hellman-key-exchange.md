@@ -74,4 +74,4 @@ In this post we’ve seen how the Diffie-Hellman key exchange protocol allows tw
 [discrete logarithm wiki]: https://en.wikipedia.org/wiki/Discrete_logarithm
 [diffie-hellman 1976]: https://ee.stanford.edu/~hellman/publications/24.pdf
 [willclarktech privacy-implementations]: https://github.com/willclarktech/privacy-implementations
-[willclarktech implementation]: https://github.com/willclarktech/privacy-implementations/tree/master/src/cryptosystem/diffie-hellman
+[willclarktech implementation]: https://github.com/willclarktech/privacy-implementations/tree/a7797d7/src/cryptosystem/diffie-hellman
