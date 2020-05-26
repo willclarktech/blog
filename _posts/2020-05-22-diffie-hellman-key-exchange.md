@@ -37,6 +37,26 @@ The original proposal from Diffie and Hellman is to use modular exponentiation a
 
 Alice and Bob now share a secret key $$g^{ab} \mod p$$. Eve the eavesdropper has seen only $$g$$, $$p$$, $$A$$, and $$B$$. She is unable to derive the value of $$a$$ from $$A$$ or $$b$$ from $$B$$ efficiently without solving the [discrete logarithm problem][discrete logarithm wiki]. And without either of those values she is unable to calculate the secret key.
 
+## Code
+
+As usual, I have implemented the Diffie-Hellman key exchange protocol in my [learning repository][willclarktech privacy-implementations], and the usual warning applies:
+
+**WARNING: This library is not recommended for production use. It was written for learning purposes only.**
+
+```js
+const diffieHellman = require("./build/cryptosystem/diffie-hellman");
+
+const alice = new diffieHellman.Party(); // Slow! Finding appropriate prime numbers.
+const { g, p } = alice;
+const bob = new diffieHellman.Party({ g, p });
+
+const aliceIntermediateValue = alice.raise(g);
+const bobIntermediateValue = bob.raise(g);
+
+const aliceSecret = alice.raise(bobIntermediateValue);
+const bobSecret = bob.raise(aliceIntermediateValue); // Same as aliceSecret
+```
+
 ## Summary
 
 In this post we’ve seen how the Diffie-Hellman key exchange protocol allows two parties to agree on a single secret without an eavesdropper discovering what it is. Also note that Alice and Bob do not reveal their respective private keys to each other. This is an important fact, as we’ll see in the next post, where we build a PSI protocol on top of this.
@@ -44,6 +64,7 @@ In this post we’ve seen how the Diffie-Hellman key exchange protocol allows tw
 ## Links
 
 - [Original paper][diffie-hellman 1976]
+- [Node.js implementation][willclarktech implementation] from my privacy learning repository
 
 [diffie-hellman wiki]: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 [psi paillier blogpost]: https://blog.willclark.tech/tech/2020/05/18/psi-with-paillier.html
@@ -52,3 +73,5 @@ In this post we’ve seen how the Diffie-Hellman key exchange protocol allows tw
 [primitive root wiki]: https://en.wikipedia.org/wiki/Primitive_root_modulo_n
 [discrete logarithm wiki]: https://en.wikipedia.org/wiki/Discrete_logarithm
 [diffie-hellman 1976]: https://ee.stanford.edu/~hellman/publications/24.pdf
+[willclarktech privacy-implementations]: https://github.com/willclarktech/privacy-implementations
+[willclarktech implementation]: https://github.com/willclarktech/privacy-implementations/tree/master/src/cryptosystem/diffie-hellman
