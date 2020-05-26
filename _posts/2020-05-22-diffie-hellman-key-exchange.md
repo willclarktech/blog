@@ -67,8 +67,8 @@ In this post we’ve seen how the Diffie-Hellman key exchange protocol allows tw
 - [Node.js implementation][willclarktech implementation] from my privacy learning repository
 
 [diffie-hellman wiki]: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
-[psi paillier blogpost]: https://blog.willclark.tech/tech/2020/05/18/psi-with-paillier.html
-[paillier cryptosystem blogpost]: https://blog.willclark.tech/tech/2020/05/15/paillier-cryptosystem.html
+[psi paillier blogpost]: /tech/2020/05/18/psi-with-paillier.html
+[paillier cryptosystem blogpost]: /tech/2020/05/15/paillier-cryptosystem.html
 [symmetric encryption wiki]: https://en.wikipedia.org/wiki/Symmetric-key_algorithm
 [primitive root wiki]: https://en.wikipedia.org/wiki/Primitive_root_modulo_n
 [discrete logarithm wiki]: https://en.wikipedia.org/wiki/Discrete_logarithm
