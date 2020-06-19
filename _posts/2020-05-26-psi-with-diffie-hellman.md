@@ -68,7 +68,7 @@ const intersection = client.handleIntersectionResponse(response); // [0, 20, 40]
 
 When we looked at PSI based on the Paillier cryptosystem, we saw there were several limitations. Some of those limitations also apply to this Diffie-Hellman PSI protocol, including the assumption that the server and client are honest, and even with the size-only protocol a malicious client could derive the full server set if the domain is small enough.
 
-An additional weakness is that the size of each party’s set is leaked to the other party (and any eavesdroppers), because only values relating to each element is sent to the other party. However, the flipside of this is that this protocol is much more practical for large domains because we do not need to perform calculations on values not in either set, and do not need to transfer them across a connection either.
+An additional weakness is that the size of each party’s set is leaked to the other party (and any eavesdroppers), because only values relating to each element are sent to the other party. However, the flipside of this is that this protocol is much more practical for large domains because we do not need to perform calculations on values not in either set, and do not need to transfer them across a connection either.
 
 My implementation is also very slow to initialize parties, hence the small bit length in the code example! This can probably be sped up somewhat with a better implementation focused more on performance, but a problematic calculation is introduced which is necessary for steps 3 and 7 of the protocol (hashing numbers until they are primitive roots).
 
