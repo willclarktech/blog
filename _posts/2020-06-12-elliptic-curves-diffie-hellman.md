@@ -2,7 +2,7 @@
 title: "Elliptic curves and Diffie-Hellman"
 description: "This post explains what elliptic curves are and how they can be used to build an alternative Diffie-Hellman key exchange system called ECDH (Elliptic Curve Diffie-Hellman)."
 category: tech
-tags: [diffie-hellman, cryptography, key exchange, elliptic curves]
+tags: [diffie-hellman, cryptography, key exchange, elliptic curves, ecdh]
 math: true
 ---
 
