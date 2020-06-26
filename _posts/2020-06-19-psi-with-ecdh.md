@@ -46,7 +46,7 @@ As with PSI using standard Diffie-Hellman, the "shared keys" are not really keys
 
 ## Extending the protocol
 
-As with PSI based on standard Diffie-Hellman, this protocol can be extended to give Alice the size of the intersection but not the intersection itself. Like before, Bob simply shuffles his calculated values before returning them to Alice, so she is unable to link them to specific elements in her own set.
+As with PSI based on standard Diffie-Hellman, this protocol can be extended to give Alice the size of the intersection but not the intersection itself. Like before, Bob simply shuffles the values he calculates corresponding to Alice’s set before returning them to Alice, so she is unable to link matches to specific elements in her own set.
 
 As far as I’m aware it is not possible to develop this into a protocol which only gives Alice a boolean result ("intersection is empty" or "intersection is not empty") as it was with [PSI based on the Paillier cryptosystem][psi with paillier blogpost].
 
