@@ -36,7 +36,7 @@ The protocol can be extended to share even less information with the client than
 
 ### Intersection size
 
-Suppose it is not important to Alice what the actual intersection is, and Bob does not want to reveal any elements of his set at all. To go back to the example of COVID-19 and infected locations, suppose Alice does not need to know which specific infected locations she was in, just how many times she has been in some infected location or other. Alice can still find out the size of the information using a slightly modified protocol. Instead of Bob sending all the multiplied values back to Alice, he instead sums them together using Paillier addition of ciphertexts, and sends the sum back to Alice. When Alice decrypts Bob’s response she will discover the size (or _cardinality_) of the intersection, without learning that any specific elements are present in Bob’s set.
+Suppose it is not important to Alice what the actual intersection is, and Bob does not want to reveal any elements of his set at all. To go back to the example of COVID-19 and infected locations, suppose Alice does not need to know which specific infected locations she was in, just how many times she has been in some infected location or other. Alice can still find out the size of the intersection using a slightly modified protocol. Instead of Bob sending all the multiplied values back to Alice, he instead sums them together using Paillier addition of ciphertexts, and sends the sum back to Alice. When Alice decrypts Bob’s response she will discover the size (or _cardinality_) of the intersection, without learning that any specific elements are present in Bob’s set.
 
 ### Intersection empty/non-empty
 
@@ -66,7 +66,7 @@ const intersectionResponse = server.revealIntersection(
   client.publicKey,
   values
 );
-const intersection = client.handlIntersectionResponse(intersectionResponse); // [0, 20, 40]
+const intersection = client.handleIntersectionResponse(intersectionResponse); // [0, 20, 40]
 
 const intersectionSizeResponse = server.revealIntersectionSize(
   client.publicKey,
