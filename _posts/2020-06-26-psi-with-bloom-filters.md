@@ -55,7 +55,7 @@ How does reversing point multiplication work? Recall that multiplication of a po
 
 With this version of the protocol values corresponding to Alice’s (by assumption smaller) set are sent in both directions. However the big saving is that values corresponding to Bob’s set are stored in a Bloom filter and this is only sent in one direction.
 
-By the end of the protocol, Bob only sees the values which Alice hashed and obscured using her private key ($$G \times a$$), while Alice only sees the Bloom filter Bob sent her as well as the values Bob calculated based on her own set ($$G \times a b$$). The Bloom filter contains the values which Bob hashed and obscured using his private key ($$G \times b$$), but even these cannot be retrieved if Bob used a cryptographically secure hash function to store them in the Bloom filter. Eve the eavesdropper also sees these values, and is in no better situation to derive sensitive information from them than either Alice or Bob.
+By the end of the protocol, Bob only sees the values which Alice hashed and obscured using her private key ($$G \times a$$), while Alice only sees the Bloom filter Bob sent her as well as the values Bob calculated based on her own set ($$G \times a b$$). The Bloom filter contains the values which Bob hashed and obscured using his private key ($$G \times b$$), but even these cannot be retrieved efficiently if Bob used a cryptographically secure hash function to store them in the Bloom filter. Eve the eavesdropper also sees these values, and is in no better situation to derive sensitive information from them than either Alice or Bob.
 
 ## Extending the protocol
 
