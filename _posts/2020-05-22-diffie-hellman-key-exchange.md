@@ -14,13 +14,14 @@ Alice and Bob want to send encrypted messages to each other using a [symmetric e
 
 ## The solution
 
-The solution to the problem is to find two one-way functions whose composition is commutative. Let’s break this down...
+The solution to the problem is to find two secret-based one-way functions whose composition is commutative. Let’s break this down...
 
+- _Secret-based_ means that in order to apply the function to an input it is necessary to know a secret parameter.
 - A _one-way function_ is a function for which it is easy to compute the output given an input value, but hard to compute the input given an output value. A good example would be a cryptographic hash function which uses a salt as a secret parameter.
 - _Function composition_ is where you combine two or more functions into a single function, by applying each function to the output of the previous function. For example, suppose you had two functions, $$addFive(x) = x + 5$$ and $$multiplyByThree(x) = x \times 3$$. You could compose a new function $$addFiveThenMultiplyByThree(x) = multiplyByThree(addFive(x))$$ out of those.
 - _Commutative_ means that the order does not matter, so in the context of function composition it means it does not matter which function you apply first. The example above is not commutative because the order matters: adding 5 then multiplying by 3 is not the same thing as multiplying by 3 then adding 5.
 
-Note that cryptographic hash functions, although one-way, generally do not meet the requirement because their composition is not commutative: $$SHA256(salt_1 \Vert SHA256(salt_2 \Vert input))$$ is not the same as $$SHA256(salt_2 \Vert SHA256(salt_1 \Vert input))$$.
+Note that cryptographic hash functions with secret salts, although one-way, generally do not meet the requirement because their composition is not commutative: $$SHA256(secret_1 \Vert SHA256(secret_2 \Vert input))$$ is not the same as $$SHA256(secret_2 \Vert SHA256(secret_1 \Vert input))$$.
 
 The original proposal from Diffie and Hellman is to use modular exponentiation as detailed below. This is because it is easy to compute $$g^e \mod p$$ but difficult to compute the values of $$g$$ and $$e$$ given only the output and the modulus $$p$$. So if you pick two secret exponents $$a$$ and $$b$$ you get two one-way functions: $$f_1(x) = x^a \mod p$$ and $$f_2(x) = x^b \mod p$$. Moreover, the composition of these functions is commutative because $$(g^a)^b = (g^b)^a \mod p$$.
 
