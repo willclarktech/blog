@@ -100,9 +100,13 @@ const { Party } = require("./build/cryptosystem/elliptic-curve-diffie-hellman");
 
 const alice = new Party(); // Generates a private key and picks a default generator for the curve
 const bob = new Party(); // Generates a different private key but picks the same default generator
+const { g } = alice.ec;
 
-const aliceSharedSecret = alice.raise(bob.intermediateValue);
-const bobSharedSecret = bob.raise(alice.intermediateValue); // Same as aliceSharedSecret
+const aliceIntermediateValue = alice.raise(g); // I.e. multiply point g by Alice’s secret scalar
+const bobIntermediateValue = bob.raise(g);
+
+const aliceSharedSecret = alice.raise(bobIntermediateValue);
+const bobSharedSecret = bob.raise(aliceIntermediateValue); // Same as aliceSharedSecret
 ```
 
 ## Summary
