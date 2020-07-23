@@ -37,7 +37,12 @@ Besides the above features, there are some special operations defined for points
 1. Reflect that point about the $$x$$ axis to obtain the point $$R$$, which also lies on the curve.
 1. $$R$$ is the result of adding $$P$$ and $$Q$$.
 
-I’m not really sure why this is called "addition", but I assume it’s because this operation shares a lot of properties that addition in other contexts usually has. Here’s an illustration of how that process might look with the same curve as before:
+Why is this called "addition"? At first glance it doesn't look very much like addition in more familiar contexts (like integers or real numbers, for example). But it actually shares these important properties with those operations:
+
+- It’s commutative, meaning it doesn’t matter if you add $$P$$ to $$Q$$ or $$Q$$ to $$P$$, the result is the same.
+- It’s associative, meaning if you add three points $$P$$, $$Q$$, and $$R$$ together, it doesn’t matter if you first calculate $$P + Q$$, then add $$R$$ or if you first calculate $$Q + R$$ and then add the result to $$P$$.
+
+Here’s an illustration of how that process might look with the same curve as before:
 
 ![elliptic curve point addition][elliptic curve point addition figure]
 
@@ -70,11 +75,12 @@ Recall from the previous post that the key to solving the problem lies in findin
 
 ## The ECDH protocol
 
-It turns out multiplying a point on an elliptic curve by a number is a good one-way function! I.e. if you have a point and a number, then multiplying the point by the number is easy. But if you only have the point and the result it is difficult to find the original number that point was multiplied by. And multiplication by two different numbers is commutative because you’re just adding a point to itself a bunch of times: what matters is the total, not how the additions break down.
+ECDH adjusts the standard Diffie-Hellman protocol to use point multiplication on an elliptic curve as its one-way function. I.e. if you have a point and a number, then we assume it is easy to multiply the point by the number. But if you only have the point and the result then we assume it is difficult to find the original number that point was multiplied by. And multiplication by two different numbers is commutative because you’re just adding a point to itself a bunch of times: what matters is the total, not how the additions break down. (Apparently these assumptions don’t hold anymore thanks to quantum computing, but ignore that for the purposes of this post.)
 
 So here’s the Diffie-Hellman key exchange protocol using elliptic curve point multiplication instead of modular exponentiation:
 
-1. Alice randomly generates a private key $$a$$, and picks an appropriate elliptic curve $$E$$ and a point $$G$$ which is a generator of that curve.
+1. The protocol assumes Alice and Bob have agreed on an appropriate elliptic curve $$E$$ and a point $$G$$ which is a generator of that curve
+1. Alice randomly generates a private key $$a$$.
 1. Alice calculates a new point, $$A$$ on $$E$$ by multiplying $$G$$ by $$a$$.
 1. Alice sends $$E$$, $$G$$, and the calculated point $$A$$ to Bob.
 1. Bob randomly generates a private key $$b$$.
