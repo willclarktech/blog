@@ -27,4 +27,4 @@ One obvious use case for this would be exfiltration: a tech company employee cou
 
 Another intriguing possibility is that publicly available pre-trained networks could be used to disseminate a relatively large amount of arbitrary data for subsequent retrieval to a large number of machine learning practitioners’ machines, who may be considered a valuable target group for certain kinds of attack. This probably has very few applications, but could perhaps be useful for an attacker who can’t make arbitrary network requests on the victim’s machine and can only deliver a small payload using other means.
 
-[demo]: https://github.com/willclarktech/ml-attacks/tree/main/src/pytorch_steganography
+[demo]: https://github.com/willclarktech/ml-attacks/tree/9ad2147a628159c45cb37bfcf6d9842e0b0ec1df/src/pytorch_steganography
